@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ApiKeySeeder::class,
             CategorySeeder::class,
+            ProductSeeder::class,
         ]);
     }
 }

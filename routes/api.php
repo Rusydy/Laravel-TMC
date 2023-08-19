@@ -22,4 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::middleware([ApiKeyMiddleware::class])->group(function () {
     Route::post('/categories', [CategoryController::class, 'store']);
+    Route::get('/categories', [CategoryController::class, 'index']);
 });
